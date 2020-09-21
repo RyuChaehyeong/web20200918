@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    var a=5;
+    var b=7;
+    console.log(a+b);
+
+    var c = "Hello";
+    console.log(c);
+
+    var d = a + c; //string과 다른 타입이 +연산시 결과는 string
+    console.log(d); //"5Hello"
+
+    var e = "3";
+    var f = 2;
+    console.log(e+f); //(string) 32
+
+    var g = "4";
+    var h = "5";
+    console.log(g-h); //-1
+    console.log(g*h); //20
+    console.log(g/h); //0.8
+    console.log(g+h); //45
+    // 빼기, 곱하기, 나누기는 string에 숫자가 있으면 계산이 되서 number type이 나옴
+
+    console.log(2+3+"sky"); //5sky
+    console.log(2+"sky"+3); //2sky3
+    console.log(2+(3+"sky")); //23sky
+</script>
+</body>
+</html>
