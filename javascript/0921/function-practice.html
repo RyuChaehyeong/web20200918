@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <input type="text" id="input1">
+  <br>
+  <input type="text" id="input2">
+  <br>
+  <button onclick="displayAdd()"><i class="fas fa-plus"></i></button>
+  <p id="result1"></p>
+
+  <input type="text" id="input3">
+  <br>
+  <input type="text" id="input4">
+  <br>
+  <button onclick="displaySubstract()"><i class="fas fa-minus"></i></button>
+  <p id="result2"></p>
+
+  
+  <script>
+    function Add(a, b){
+      return a+b;
+    }
+    function displayAdd(){
+      n1 = document.getElementById("input1").value;
+      n2 = document.getElementById("input2").value;
+      result = Add(Number(n1), Number(n2));
+      document.getElementById("result1").innerHTML=result;
+    }
+
+    function displaySubstract(){
+      n1 = document.getElementById("input3").value;
+      n2 = documnet.getElementById("input4").value;
+      result = Substract(n1, n2);
+      document.getElementById("result2") = result;
+    }
+  </script>
+</body>
+</html>
