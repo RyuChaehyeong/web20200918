@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    var car ={
+      name:"kia",
+      color:"black",
+      description: function(){
+        // console.log("kia"+","+"black");
+        console.log(this.name+","+this.color);
+        // 객체가 만들어질 당시에는 알수없어서 자기자신을 의미하는 this를 써준다.
+      }
+
+    }
+    car.description();
+    // 근데 car의 property가 바뀌면?
+    car.color="white";
+    // 가지고 있는 자기 자신의 property에 접근할 때에는
+
+  </script>
+</body>
+</html>
