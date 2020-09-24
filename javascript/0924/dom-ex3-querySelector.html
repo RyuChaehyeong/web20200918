@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <h1 id="head1">Lorem.</h1>
+  <h1 class ="note" id="head2">Amet.</h1>
+  <h1 class ="note error" id="head3">Eius!</h1>
+  <h1 class ="note error" id="head4">Aperiam.</h1>
+  <h1 id="head5">Sapiente!</h1>
+  <script>
+    var h1 = document.querySelector("#head1");
+    console.log(h1.innerHTML);
+
+    var h2 = document.querySelector(".note");
+    console.log(h2.innerHTML);
+    //여러 element가 선택된 경우 맨 앞에것만 나온다.
+  </script>
+</body>
+</html>
