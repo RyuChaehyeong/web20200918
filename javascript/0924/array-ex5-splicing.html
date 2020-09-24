@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    var heros = ["cap","hulk","thor","thanos"];
+    for (i=0 ; i<heros.length; i++){
+      console.log(heros[i]);
+    }
+    heros.splice(0,1); //0부터 1개를 지움
+    console.log("=======================");
+    for (i=0 ; i<heros.length; i++){
+      console.log(heros[i]);
+    }
+
+    heros.splice(1,0, "batman");//2번째 값이 0이면 지우지 않고
+    //그 자리에 세번째 값이 들어감
+    console.log("=======================");
+    for (i=0 ; i<heros.length; i++){
+      console.log(heros[i]);
+    }
+
+    heros.splice(1,0, "super","star");//2번째 값이 0이면 지우지 않고
+    //그 자리에 세번째 값이 들어감
+    console.log("=======================");
+    for (i=0 ; i<heros.length; i++){
+      console.log(heros[i]);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    var heros = ["thor","hulk","cap","doctor"
+    ];
+
+    for(var i =0; i<heros.length; i++){
+      console.log(heros[i]);
+    }
+    //push(): 배열에 값을 넣는 메서드
+    heros.push("marvel");
+    console.log(heros.length);
+    for (var i = 0; i<heros.length; i++){
+      console.log(heros[i]);
+    }
+    //pop(): 마지막 값을 꺼냄, 파라미터 필요x
+    heros.pop();
+    heros.pop();
+    console.log(heros.length);
+    for (var i = 0; i<heros.length; i++){
+      console.log(heros[i]);
+    }
+
+  </script>
+</body>
+</html>
