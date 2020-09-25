@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+  </style>
+  <script>
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+        $("h1").toggle(3000,function(){
+          console.log("When effect end, executed.");
+        });
+      });
+    });
+    // console.log("When effect end, executed.");이부분이 효과가 끝나고 나타나게
+    //하기 위해서 callback parameter부분에 함수로 만들어서 넣으면 댄당
+    
+  </script>
+</head>
+<body>
+  <button id="btn1">toggle</button>
+  <h1>Lorem, ipsum dolor.</h1>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    table{
+      border: 1px solid black;
+      width: 100%;
+      border-collapse: collapse;
+
+    }
+
+    td{
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>Lorem.</td>
+      <td>Ratione.</td>
+      <td>Fugit.</td>
+      <td>Dignissimos!</td>
+      <td>Quas!</td>
+      <td>Repellat.</td>
+    </tr>
+    <tr>
+      <td>Corrupti!</td>
+      <td>Modi.</td>
+      <td>Facilis!</td>
+      <td>Labore.</td>
+      <td>Modi?</td>
+      <td>Incidunt.</td>
+    </tr>
+    <tr>
+      <td>Non!</td>
+      <td>Labore.</td>
+      <td>Quia?</td>
+      <td>Doloribus.</td>
+      <td>Doloremque?</td>
+      <td>Reiciendis.</td>
+    </tr>
+    <tr>
+      <td>A.</td>
+      <td>Asperiores?</td>
+      <td>Facilis?</td>
+      <td>Amet!</td>
+      <td>Ex!</td>
+      <td>Omnis.</td>
+    </tr>
+    <tr>
+      <td>Rerum!</td>
+      <td>Nemo.</td>
+      <td>Sapiente.</td>
+      <td>Dolorem.</td>
+      <td>Illo.</td>
+      <td>Soluta.</td>
+    </tr>
+  </table>
+  <script>
+    // $("tr:odd").hide(); -> 사용자제 권고 (jQuery selector이어서)
+    // nth-child(n): n번째자식, (CSS selector사용하도록)
+    $("tr:nth-child(2n-1)").hide();
+  </script>
+  
+</body>
+</html>

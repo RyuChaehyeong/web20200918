@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <h1 id="head1">Lorem.</h1>
+  <h1 id="head2">Suscipit.</h1>
+  <h1 class="show" id="head3">Architecto.</h1>
+  <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi temporibus assumenda vero veritatis at nemo explicabo qui pariatur rerum, ducimus velit cupiditate molestiae veniam voluptatum illum a sit eaque deleniti.</p>
+  <p class="show" id="para2">Debitis sapiente dicta necessitatibus, eum labore vero, tempore laborum soluta eius mollitia totam. Officiis, perferendis. Quo a quae blanditiis! Quisquam tempora quis assumenda quia soluta perspiciatis quaerat? Itaque, natus illo.</p>
+  <script>
+    //$("#para2"): 의미 jQuery 객체로 만들어와서!
+    $("#para2").hide();
+    $("h1").hide();
+    
+    // 이전 statement때문에 숨겨졌다가 아래 statement때문에 다시 나타남!
+    $(".show").show();
+    
+  </script>
+</body>
+</html>
