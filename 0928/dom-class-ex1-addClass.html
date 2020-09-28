@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    /* class를 나중에 추가해도 적용이 됨 */
+    .note{
+      background-color: cornflowerblue;
+      font-size: 20px;
+    }
+    .error{
+      text-decoration: line-through;
+    }
+  </style>
+  <script>
+    //page로딩 되자마자 11번 바로 실행 class생성
+    $(document).ready(function(){
+      $("#div1").addClass("note");
+      $("#div2").addClass("note error")
+      //class 2개이상 넣고 싶으면 띄어쓰기로 써주기
+    });
+  </script>
+</head>
+<body>
+  <div id="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nostrum alias excepturi sequi sunt, accusantium sint vel sapiente reprehenderit fugit nemo, dolorem ipsum quasi nihil consequatur! Recusandae nobis quis hic.</div>
+  <div id="div2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem culpa totam aliquam laboriosam quasi dolores a obcaecati laborum repellat, deserunt, earum dolor vitae facere debitis eos, hic est odit.</div>
+</body>
+</html>

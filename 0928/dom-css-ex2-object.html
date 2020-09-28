@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+  </style>
+  <script>
+    $(document).ready(function(){
+      var obj1 = {
+        name:"john", 
+        age:50
+        };
+        //따옴표 없으면 연산자 쓰면 안대서 lowerCamelCase
+      console.log(obj1.name);
+      console.log(obj1.age);
+      console.log("=======");
+      console.log(obj1["name"]);
+      console.log(obj1["age"]);
+
+      var obj2 = {
+        "name":"jane",
+        "age":30
+        };
+        //따옴표 있으면 연산자 써도 되서 background-color
+        //대신에 값을 불러올때도 obj2["background-color"]
+        //obj2.background-color 이렇게는 안댐
+      console.log("=======");
+      console.log(obj2.name);
+      console.log(obj2.age);
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>

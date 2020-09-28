@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+  </style>
+  <script>
+    $(document).ready(function(){
+      $("div").children().css("border","5px solid green");
+      $("div").children(".note").css("color","yellow");
+      $("div>.note").css("background-color","black");
+      //11, 12번은 같은 element 선택한 것
+    });
+  </script>
+</head>
+<body>
+  <div>
+    <p class="note"><span>Lorem, ipsum dolor.</span></p>
+  </div>
+  <div>
+    <p class="note"><span>Adipisci, vero mollitia.</span></p>
+  </div>
+  <div>
+    <p><span>Consequuntur, odio pariatur.</span></p>
+  </div>
+</body>
+</html>

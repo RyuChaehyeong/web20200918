@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    .note{
+      background-color: yellow;
+    }
+    .erorr{
+      text-decoration: line-through;
+    }
+  </style>
+  <script>
+    $(document).ready(function(){
+      $("#div1").removeClass("note erorr");
+      //띄어쓰기로 클래스 여러 개 삭제 가능
+    });
+  </script>
+</head>
+<body>
+  <div id="div1" class="note erorr">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis voluptatem suscipit iusto eaque aliquid reiciendis esse accusamus natus tempora, quasi quis harum dolorum facilis! Animi corporis laudantium tempore libero iste?</div>
+</body>
+</html>

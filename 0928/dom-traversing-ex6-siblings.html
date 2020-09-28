@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+  </style>
+  <script>
+    $(document).ready(function(){
+      $("h3").siblings().css("font-size","100px");//h3은 선택 x
+      $("h3").next().css("color","blue");
+      $("h3").nextAll().css("border","5px dotted red");
+      $("h3").prev().css("background-color","yellow");
+      $("h3").prevAll.css("text-align","center");
+    });
+  </script>
+</head>
+<body>
+  <h1>Lorem.</h1>
+  <h2>Nemo.</h2>
+  <h3>Quidem.</h3>
+  <h4>Neque.</h4>
+  <h5>Illo.</h5>
+  <h6>Quos.</h6>
+</body>
+</html>
