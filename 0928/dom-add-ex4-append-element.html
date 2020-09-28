@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+  </style>
+  <script>
+    $(document).ready(function(){
+      $("#div1").append("<p>hello</p>");
+      $("#div2").append("<p></p>");
+
+      //string을 parameter로 받음
+      $("#div3").append("<p/>"); //content없을 때 <p/> 라고 씀
+      
+      
+      //jQuery객체를 parameter로 받음
+      var newPara = $("<p/>");
+      //tree에는 아직 안붙은 새로운 element
+      //객체니까 effect를 쓸 수 있다. 
+      newPara.text("hello"); //text를 hello로 바꾸고
+      $("#div4").append(newPara); //돔에 붙임
+
+    });
+  </script>
+</head>
+<body>
+  <div id="div1">Lorem, ipsum dolor.</div>
+  <div id="div2">Lorem, ipsum dolor.</div>
+  <div id="div3">Lorem, ipsum dolor.</div>
+  <div id="div4">Lorem, ipsum dolor.</div>
+</body>
+</html>

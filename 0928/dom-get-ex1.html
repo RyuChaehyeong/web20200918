@@ -7,6 +7,7 @@
   </style>
   <script>
     $(document).ready(function(){
+      //text는 text만, html은 tag까지!
       var t = $("#head1").text();
       var h = $("#head2").html();
 
@@ -19,6 +20,7 @@
       $("#input1").keyup(function(){
         var val = $(this).val();
         console.log(val);
+        //val은 input에 있는 값 데려옴
       });
     });
   </script>
