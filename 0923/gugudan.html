@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <input type="number" id="input1">
+  <button onclick="show()">구구</button>
+  <div id="result"></div>
+  <script>
+    function show(){
+      var num = document.getElementById("input1").value;
+      num = Number(num);
+      var txt="";
+      //그냥 var txt; 선언만 해놓으면 undefined 이라고 나옴
+      for (i=1;i<10;i++){
+        txt += "<br>"+num +"&times;"+i+"="+(num*i);
+      }
+
+      document.getElementById("result").innerHTML= txt;
+    }
+  </script>
+</body>
+</html>

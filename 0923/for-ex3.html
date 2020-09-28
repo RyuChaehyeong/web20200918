@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    .container{
+      background-color: rgb(8, 82, 8);
+      color: blanchedalmond;
+      padding: 80px;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      font-size: 80px;
+      font-weight: 50%;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="lotto()">로또버노</button>
+  <div id="result"></div>
+  <script>
+    function lotto(){
+      var numbers="";
+      for (var i = 0 ; i<6;i++){
+        var randomNum = Math.floor(Math.random()*45)+1;
+        numbers += "<div class='container'>" + randomNum + "</div>";
+      }
+      document.getElementById("result").innerHTML = numbers;
+    }
+  </script>
+</body>
+</html>

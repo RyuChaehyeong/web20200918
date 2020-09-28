@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <h1 id="head1">Lorem ipsum dolor sit amet.</h1>
+  <h1 id="head2">Nemo eius laboriosam possimus deleniti.</h1>
+  <h1 id="head3">Nobis beatae voluptate a minima!</h1>
+  <h1 id="head4">Distinctio eligendi iusto facere quos.</h1>
+  <h1 id="head5">Voluptates doloribus in perspiciatis voluptatum.</h1>
+  <script>
+    //여러 element는 배열로 받는다.
+    var heads = document.getElementsByTagName("h1");
+    console.log(heads.length);
+    for (var i = 0; i<heads.length ; i++){
+      console.log(heads[i].innerHTML);
+    }
+  </script>
+</body>
+</html>

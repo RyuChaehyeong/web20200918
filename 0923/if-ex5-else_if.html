@@ -1,0 +1,33 @@
+<html>
+  <!DOCTYPE html>
+<head>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <input type="text" id="input1">
+  <button onclick="voting()">투표나이</button>
+  <script>
+    console.log("start");
+
+    function voting(){
+
+      var age = document.getElementById("input1").value
+      age = Number(age);
+      if (age > 18){
+        console.log("executed1");
+      } else if (age > 10){
+        console.log("executed2");
+      } else if (age > 5){
+        console.log("executed3");
+      } else {
+        console.log("executed4");
+      }
+    
+    }
+
+    console.log("end");
+  </script>
+</body>
+</html>
